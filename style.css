@@ -1,7 +1,11 @@
 @charset 'UTF-8';
-/*FIXME: sign up btn*/
+
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Labrada', serif;
     background-color: #1F2937;
     margin: 0px;
     padding: 0px;
@@ -56,7 +60,7 @@ header, .intro {
     margin-bottom: -10px;
     inline-size: 350px;
     overflow-wrap: break-word;
-    margin-left: 12%;
+    margin-left: 10%;
 }
 
 .under-title {
@@ -64,13 +68,13 @@ header, .intro {
     color: white;
     inline-size: 250px;
     overflow-wrap: break-word;
-    margin-left: 15%;
+    margin-left: 16%;
     
 }
 
 .logo {
     color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
 }
 
@@ -127,14 +131,23 @@ img:hover {
 }
 
 ul {
+    font-size: 19px;
     display: flex;
-    gap: 16px;
+    gap: 24px;
     list-style-type: none;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    transition: ease-in .3s;
+    color: #e2dddd;
+    text-decoration: underline;
+    font-size: 20px;
+    padding: 8px;
 }
 
 .btn1 {
@@ -147,7 +160,7 @@ a {
     height: 30px;
     font-weight: bold;
     padding-bottom: 2px;
-    margin-left: 15%;
+    margin-left: 60%;
 }
 
 button:hover {
@@ -159,9 +172,11 @@ button:hover {
 
 .quote {
     color: white;
-    font-size: 38px;
+    font-size: 42px;
+    max-width: 100vw;
     font-weight: lighter;
     font-style: italic;
+    font-family: 'Dancing Script', cursive;
     padding: 150px 35%;
     background-image: url("imgs/background2.jpg");
     background-repeat: no-repeat;
@@ -174,6 +189,10 @@ button:hover {
     align-items: center;
     align-self: stretch;
     flex-direction: column;
+}
+
+.in-quote {
+    margin-right: 15%;
 }
 
 .author {
@@ -200,6 +219,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.418);
     justify-content: space-between;
     background-color: black;
     border-radius: 10px;
@@ -207,6 +227,7 @@ button:hover {
     padding: 36px;
     margin: 100px 0px;
     gap: 32px;
+    width: 25%;
 }
 
 .action {
